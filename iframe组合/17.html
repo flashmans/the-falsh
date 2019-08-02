@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Z-index,重叠的处理</title>
+		<style type="text/css">
+			
+			#div1{
+				width: 40%;
+				
+				background-color: red;
+				
+				position: relative;
+				left: 100px;
+				top: 100px;
+				/*z-index: 1;*/
+				
+				
+			}
+			
+			#div2{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				
+				position: relative;
+				left: -100px;
+				top: -50px;
+				opacity: 0.5;/*透明度，0完全透明，1完全不透明*/
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+			
+			<img id="div1"   src="../7_24/img/timg (1).jpg" />
+			<img id="div2" src="../7_24/3/img/timg.jpg" />
+			
+			
+			
+		
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+				闰年
+			*/
+			
+			var year = prompt("请输入年份");	//js ，String  ,number
+			//将字符串转为number
+			year=year*1;
+			//判断不能被100整除， 但是可以被4整除，是闰年
+			if( year%4==0  &&  year %100!=0 ){
+				document.write(year+"闰年");
+				
+			//判断能被400整除，是闰年	
+			}else if(year %400 ==0){
+				document.write(year+"闰年");
+			}else{
+				//不是以上情况，不是闰年
+				document.write(year+"不是闰年")
+			}
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

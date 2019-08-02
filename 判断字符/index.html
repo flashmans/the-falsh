@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript">
+			var content=prompt("请输入一个字符：");
+			var code = content.charCodeAt(0);
+			if(code>=48 && code<=57) 
+			{
+				document.write("这是一个数字。");
+			}
+			else if (code>=65&& code<=90){
+				document.write("这是一个大写");
+			}
+			else if (code>=97 && code<=122){
+				document.write("这是一个小写");
+			}
+			else {
+				document.write("这是一个符号");
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

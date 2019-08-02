@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内部样式</title>
+		<!--
+			在该html文件中，编写样式
+			语法  : 
+			<style type="text/css">
+				选择器名称1{
+						属性名1:属性值1;
+						...;
+						属性名n:属性值n;
+				}
+				...
+				选择器名称n{
+						属性名1:属性值1;
+						...;
+						属性名n:属性值n;
+				}
+				
+			</style>
+			优点：将样式和标签进行分离，标签干净
+			缺点：使用的范围仅仅在文件中
+			
+		-->
+		
+		<style type="text/css">
+			input{
+				 color: red;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<form action="">
+			账号：<input 
+				type="text" 
+				name="lname" 
+				placeholder="账号"
+				 /><br/>
+			密码：<input 
+				type="password" 
+				name="psw" 
+				placeholder="密码"
+				
+				 /><br/>
+			<input 
+				type="submit" 
+				value="登录"
+				
+				 />
+			
+		</form>		
+		
+	</body>
+</html>

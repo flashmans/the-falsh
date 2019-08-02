@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>嵌套分支</title>
+		<script type="text/javascript">
+			/**
+			 * 周天给宠物喂食
+			 * 
+			 * 提示给什么宠物喂食
+			 * 如果是乌龟，为虾皮
+			 * 如果是小猫, 猫粮
+			 * 
+			 * 1.外层分支是判断周几
+			 * 2.内层分支，判断宠物  
+			 */
+			
+			var  d = new Date();
+			//获取到周几
+			var  w = d.getDay();
+			
+			if(w==0){//是周天
+				
+				var  pet =prompt("周天了，请输入要喂食的宠物");
+				
+				if(pet=="猫"){
+					document.write("给猫喂猫粮");
+				}else if(pet=="乌龟"){
+					document.write("给乌龟喂虾皮");
+				}else{
+					document.write("输出错误")
+				}
+				
+			}
+			else{
+				document.write("今天不喂猫");
+			}
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

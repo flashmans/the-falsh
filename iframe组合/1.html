@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			pic=新建+Microsoft+Office+Excel+97-2003+工作表.xls
+			&infor=这个是一个测试
+			&p=山西
+			
+			pic=
+			&infor=
+			&p=2
+			
+			
+		-->
+		<form action="" method="get">
+			上传图片:<input type="file" name="pic" /><br />
+			<!--文本域  默认显示的大小  rows 行 ，cols 列-->
+			备注：<textarea rows="3" cols="20" name="infor"></textarea><br/>
+			<!--下拉选择-->
+			省份：<select name="p">
+					<!--option 选项,为了减少提交的数据量，需要设置option标签的value属性-->
+					<option value="1">陕西</option>
+					<option value="2">山西</option>
+					<option value="3">山东</option>
+					<option value="4">浙江</option>
+				</select><br />
+			
+			<!--type 值 submit时，就会和表达form进行绑定，会直接提交它所在表单的信息
+				value 按钮上显示的信息
+			-->
+			<input type="submit" value="提交" />
+			<input type="reset" value="重置" />
+			<!--图片的提交按钮，功能类似submit  ,src是图片的资源-->
+			<input type="image" src="../7_24/3/img/timg.jpg" />
+			<!--隐藏的，不可见的，主要是为了提交信息  name是提交参数用的，value提交值用的 -->
+			<input type="hidden" name="id" value="1" />
+		</form>
+		
+		<hr/>
+		<form action="../7_25/1.html" method="get">
+			<input type="text" name="name"  />
+			<input type="submit" value="提交" />
+			<input type="reset" value="重置" />
+		</form>
+		
+		
+		
+	</body>
+</html>

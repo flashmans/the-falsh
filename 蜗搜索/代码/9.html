@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>switch_case</title>
+		<script type="text/javascript">
+			var  d =new Date();
+			
+			
+			var  w=d.getDay();
+			/**
+			if(w==0){
+				document.write("周天了，明天要上班了");
+			}else if(w==1){
+				document.write("周一，新一周开始了");
+			}else if(w== 2){
+				document.write("周二，这周又过了两天了");
+			}else if (w==3){
+				document.write("周三，这周过半");
+			}else if (w==4){
+				document.write("周四，再过一天可以休息了");
+			}else if (w==5){
+				document.write("周五，明天可以休息了");
+			}else {
+				document.write("周六，可以休息了");
+			}
+			*/
+			
+			/**
+			 * 等值的处理
+			 * 结构清晰，阅读简单
+			 * 注意
+			 * 1.case 对应的值不能相同
+			 * 2.cese 别忘break关键字
+			 */
+			switch(w){
+				case 0:
+					document.write("周天了，明天要上班了");
+					break;
+				case 1:
+					document.write("周一，新一周开始了");
+					break;
+				case 2:
+					document.write("周二，这周又过了两天了");
+					break;
+				case 3:
+					document.write("周三，这周过半");
+					break;
+				case 4:
+					document.write("周四，再过一天可以休息了");
+					break;
+				case 5:
+					document.write("周五，明天可以休息了");
+					break;
+				default:
+					document.write("周六，可以休息了");
+					break;
+			}
+		
+			
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	
+	
+	
+	<body>
+	</body>
+</html>

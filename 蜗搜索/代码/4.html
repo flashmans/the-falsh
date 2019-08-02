@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+				闰年
+			*/
+			
+			var year = prompt("请输入年份");	//js ，String  ,number
+			//将字符串转为number
+			year=year*1;
+			
+			if(  (year%4==0 && year %100!=0)  ||   year%400==0 ){
+				document.write("闰年");
+			}else{
+				document.write("不是闰年");
+			}
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

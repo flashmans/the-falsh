@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>位置</title>
+		<style type="text/css">
+			/**postion的定位，往往和 top, bottom, left, right
+			 * 静态定位(static)：HTML元素的默认值，即"没有"定位，静态定位的元素不会受到top, bottom, left, right影响
+				固定定位(fixed)：元素的位置相对于浏览器"窗口"是固定位置(在不同的层次进行布局)，不会随滚动条而变化
+				相对定位(relative)：相对定位元素的定位是相对其 "原来位置"的偏移量，原有的空间位置继续保留
+				绝对定位(absolute)：绝对定位的元素的位置相对于最近的已定位"父元素"，如果元素没有已定位的父元素，
+				那么它的位置相对于父元素也需要使用绝对定位.
+				原有位置空间没有
+			 */
+			#div1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				
+				position: absolute;
+				left: 100px;
+				top: 100px;
+			}
+			
+			#div2{
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				
+				position: fixed;
+				left: 100px;
+				top: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+			
+			<div id="div1"></div>
+			<div id="div2"></div>
+			
+			<img src="../7_24/img/timg (1).jpg" />
+			<img src="../7_24/img/timg (1).jpg" />
+			
+		
+	</body>
+</html>

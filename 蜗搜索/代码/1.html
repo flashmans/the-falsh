@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>82页作业</title>
+		<script type="text/javascript">
+			/*判断输入的一个字符，是什么？*/
+			
+			var  str=prompt("请输入一个字符");//“asss”
+			
+			//获取到字符所在的ascii表中的值
+			var code=str.charCodeAt(0);
+			
+			//根据code值进行判断，在的判断
+			//判断是否为数字范围
+			if(code>=48 && code<=57){//加入上下限，准确定位了范围
+				document.write(str+"是数字");
+			}else if(code>=65 && code<=90){
+				document.write(str+"是大写字母");
+			}else if(code>=97 && code<=122){
+				document.write(str+"是小写字母");
+			}else{
+				document.write(str+"其他字符")
+			}
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

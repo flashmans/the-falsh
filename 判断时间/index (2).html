@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="application/javascript">
+			var b=new Date()
+			//得到当前时间
+			var a=b.getHours()
+			//从时间中取出小时数值
+			if (a>0&&a<=4){
+				document.write("午夜");
+				
+			}
+			else if (a>4&&a<=8){
+				document.write("凌晨");
+			}
+			else if (a>8&&a<=12){
+				document.write("上午");
+			}
+			else if (a>12&&a<=16){
+				document.write("中午");
+			}
+			else if (a>16&&a<=20){
+				document.write("下午");
+			}
+			else{
+				document.write("晚上");
+			}
+			//根据时间判断当前时间段
+			
+			
+			
+		</script>
+
+	</head>
+	<body>
+		
+	</body>
+</html>
